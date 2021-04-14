@@ -3,21 +3,21 @@ public class Number {
 	public static void main(String[] args) {
 		
 		Scanner sc=new Scanner(System.in);
-		System.out.println("10°³ÀÇ ·»´ı ¼ıÀÚ Áß ÇÏ³ª¸¦ ¸ÂÃçº¸¼¼¿ä.(1¿¡¼­ 50±îÁö):");
+		System.out.println("10ê°œì˜ ë Œë¤ ìˆ«ì ì¤‘ í•˜ë‚˜ë¥¼ ë§ì¶°ë³´ì„¸ìš”.(1ì—ì„œ 50ê¹Œì§€):");
 		
-		int a=sc.nextInt();
-		int c=0; 
-		for(int i=0;i<10;i++){
-			int b =(int)(Math.random()*50+1);
+		int a=sc.nextInt(); //ì…ë ¥ë°›ì€ ìˆ«ì
+		int c=0; //ê°™ì€ ê°’ì„ í™•ì¸í•´ì£¼ëŠ” ë³€ìˆ˜
+		for(int i=0;i<10;i++){ //FORë¬¸
+			int b =(int)(Math.random()*50+1);   //ëœë¤ê°’ 50ê¹Œì§€
 			System.out.print(b+" ");
-			if(a==b){
+			if(a==b){// ë§ëŠ”ê²Œ ìˆìœ¼ë©´ 1ë¡œ ì„ ì–¸
 				c=1;
 			}
 		}
 		if(c==1){
-			System.out.println("\nÁ¤´ä");
+			System.out.println("\nì •ë‹µ"); 
 		}else{
-			System.out.println("\n¿À´ä");
+			System.out.println("\nì˜¤ë‹µ");
 		
 		}
 	}		
